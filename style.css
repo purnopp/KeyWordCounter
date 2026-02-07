@@ -1,0 +1,47 @@
+:root {
+  --bg: #f9f9f9;
+  --text: #000;
+  --counter: #007BFF;
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #ffffff;
+  --counter: #4dabf7;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 50px;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: 0.3s;
+}
+
+#counter {
+  font-size: 4em;
+  margin: 20px;
+  color: var(--counter);
+}
+
+.btn {
+  font-size: 1.2em;
+  padding: 15px 30px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+}
+
+.increment { background-color: #28a745; }
+.reset { background-color: #dc3545; }
+
+.mode-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
